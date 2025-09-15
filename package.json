@@ -1,0 +1,34 @@
+{
+  "name": "poc-kms-envelope-encryption",
+  "version": "1.0.0",
+  "description": "POC for envelope encryption with AWS KMS for GDPR compliance",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "localstack": "docker-compose up -d",
+    "localstack:stop": "docker-compose down"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.438.0",
+    "libsodium-wrappers": "^0.7.15",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/libsodium-wrappers": "^0.7.14",
+    "@types/node": "^20.8.0",
+    "@types/pg": "^8.10.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "kms",
+    "encryption",
+    "gdpr",
+    "envelope-encryption",
+    "aws"
+  ],
+  "author": "",
+  "license": "MIT"
+}
